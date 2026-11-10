@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quero agendar minha aula · Letícia Araújo</title>
+<meta name="description" content="Conte um pouco sobre você e o que busca no inglês para agendar sua aula com Letícia Araújo.">
+<meta name="theme-color" content="#D8751B">
+<link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flower" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <ellipse cx="50" cy="24" rx="9.5" ry="22"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(45 50 50)"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(90 50 50)"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(135 50 50)"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(180 50 50)"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(225 50 50)"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(270 50 50)"/>
+      <ellipse cx="50" cy="24" rx="9.5" ry="22" transform="rotate(315 50 50)"/>
+    </g>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 11h13.2l-4.6-4.6L14 5l7 7-7 7-1.4-1.4 4.6-4.6H4z"/></symbol>
+</svg>
+
+<a class="skip" href="#form">Pular para o formulário</a>
+
+<header class="nav" id="nav">
+  <a class="logo" href="index.html" aria-label="Letícia Araújo, voltar ao início"><svg class="icon" aria-hidden="true"><use href="#flower"/></svg>Letícia Araújo</a>
+  <a class="btn btn-dark" href="index.html">Voltar ao site</a>
+</header>
+
+<main>
+  <section class="hero form-hero">
+    <svg class="hero-bgflower" aria-hidden="true"><use href="#flower"/></svg>
+    <div class="wrap" style="position:relative">
+      <span class="eyebrow">hi, future student</span>
+      <h1>Quero agendar<br><em>minha aula</em></h1>
+      <p class="lead">Conte um pouco sobre você e o que busca no inglês. A Letícia usa essas respostas para entender seu momento e combinar dias e horários.</p>
+    </div>
+  </section>
+
+  <section class="form-wrap wrap">
+    <div class="form-card" id="form">
+      <form id="leadForm" novalidate>
+        <!-- campo-armadilha contra robôs: pessoas não veem nem preenchem -->
+        <div class="hp" aria-hidden="true"><label>Não preencha <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+        <fieldset>
+          <legend>be very welcome :)</legend>
+          <div class="grid2">
+            <div class="field"><label for="nome">First name <b>*</b> <small>Nome</small></label><input id="nome" name="nome" type="text" autocomplete="given-name" placeholder="Jane" required maxlength="80"></div>
+            <div class="field"><label for="sobrenome">Last name <small>Sobrenome</small></label><input id="sobrenome" name="sobrenome" type="text" autocomplete="family-name" placeholder="Smith" maxlength="80"></div>
+          </div>
+          <div class="field"><label for="email">E-mail <b>*</b> <small>Para contato</small></label><input id="email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" required maxlength="160"></div>
+          <div class="field"><label for="whatsapp">Phone number <b>*</b> <small>Número de celular, com DDI e DDD</small></label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+55 11 96123-4567" required maxlength="40"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>your english</legend>
+          <div class="field">
+            <span class="label" id="l-est">Have you studied English before? <small>Você já estudou inglês antes?</small></span>
+            <div class="pills" role="radiogroup" aria-labelledby="l-est">
+              <label class="pill"><input type="radio" name="estudou" value="Sim"><span>Yes · Sim</span></label>
+              <label class="pill"><input type="radio" name="estudou" value="Não"><span>No · Não</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <span class="label" id="l-como">If yes, how was it? <small>Se sim, como foi?</small></span>
+            <div class="pills" role="radiogroup" aria-labelledby="l-como">
+              <label class="pill"><input type="radio" name="como_foi" value="Professor particular"><span>Private teacher</span></label>
+              <label class="pill"><input type="radio" name="como_foi" value="Escola de inglês"><span>English school</span></label>
+              <label class="pill"><input type="radio" name="como_foi" value="Sozinho(a)"><span>By myself</span></label>
+              <label class="pill"><input type="radio" name="como_foi" value="Só escola normal"><span>Just normal school</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="sentimento">What is the first feeling that comes to your mind when you think about English? <small>Qual é o primeiro sentimento que vem na sua mente quando você pensa em inglês?</small></label><input id="sentimento" name="sentimento" type="text" maxlength="300" placeholder="Type your answer here…"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>your schedule</legend>
+          <div class="field">
+            <span class="label" id="l-per">What period of the day would you be able to have classes? <small>Qual período do dia você poderia ter aulas?</small></span>
+            <div class="pills" role="radiogroup" aria-labelledby="l-per">
+              <label class="pill"><input type="radio" name="periodo" value="Manhã 09-12h"><span>Morning 09–12h · manhã</span></label>
+              <label class="pill"><input type="radio" name="periodo" value="Tarde 12-16h"><span>Afternoon 12–16h · tarde</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <span class="label" id="l-dia">What day of the week would be better? <small>Que dia da semana seria melhor? (pode marcar mais de um)</small></span>
+            <div class="pills" role="group" aria-labelledby="l-dia">
+              <label class="pill"><input type="checkbox" name="dia" value="Segunda"><span>Monday</span></label>
+              <label class="pill"><input type="checkbox" name="dia" value="Terça"><span>Tuesday</span></label>
+              <label class="pill"><input type="checkbox" name="dia" value="Quarta"><span>Wednesday</span></label>
+              <label class="pill"><input type="checkbox" name="dia" value="Quinta"><span>Thursday</span></label>
+              <label class="pill"><input type="checkbox" name="dia" value="Sexta"><span>Friday</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span>Concordo em compartilhar esses dados com a Letícia para que ela entre em contato sobre aulas de inglês (free trial class!). <b>*</b></span>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn btn-dark btn-lg" type="submit" id="send">Enviar <svg class="icon icon-arrow" aria-hidden="true"><use href="#arrow"/></svg></button>
+          <p class="form-msg" id="msg" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <div class="form-done" id="done" hidden>
+        <svg class="icon" aria-hidden="true"><use href="#flower"/></svg>
+        <h2>Recebido!</h2>
+        <p class="hand">thank you, friend</p>
+        <p>Suas respostas chegaram. A Letícia vai entrar em contato com você.</p>
+        <p><b>Let's have a FREE trial class?</b><br>Vamos ter uma aula experimental GRATUITA? Escolha um horário:</p>
+        <a class="btn btn-dark" href="https://calendly.com/leticiasaraujo93/30min" target="_blank" rel="noopener">Schedule time <svg class="icon icon-arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+        <p><a href="index.html">Voltar ao site</a></p>
+      </div>
+
+      <div class="form-fallback" id="fallback" hidden>
+        <p>Este formulário ainda está sendo configurado. Enquanto isso, use o formulário alternativo:</p>
+        <a class="btn btn-dark" href="https://63i39tubq86.typeform.com/to/DrF8XI50" target="_blank" rel="noopener">Abrir formulário <svg class="icon icon-arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg class="icon" aria-hidden="true" style="color:var(--orange)"><use href="#flower"/></svg>Letícia Araújo</a>
+    <span>Design e código por Nanda Monteiro · <a href="https://www.instagram.com/nandamto" target="_blank" rel="noopener">@nandamto</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="agendar.js"></script>
+</body>
+</html>

@@ -470,3 +470,48 @@ body::after{
   .logos,.swatches,.voice{grid-template-columns:1fr}
   .sw.w2{grid-column:auto}
 }
+
+/* ==========================================================
+   agendar.html · formulário
+   ========================================================== */
+.form-hero{padding-bottom:clamp(110px,14vw,170px)}
+.form-hero h1{font-size:clamp(3rem,8vw,6.6rem);line-height:.92;letter-spacing:-.035em}
+.form-hero h1 em{font-style:italic;font-weight:300}
+.form-hero .eyebrow{color:var(--cream);font-size:1.9rem;margin-bottom:.6rem}
+.form-wrap{margin-top:clamp(-120px,-9vw,-70px);position:relative;z-index:2;padding-bottom:clamp(60px,9vw,120px);max-width:880px}
+.form-card{background:var(--cream);border:3px solid var(--espresso);border-radius:var(--r-lg);box-shadow:10px 10px 0 var(--espresso);padding:clamp(1.4rem,4vw,3rem)}
+fieldset{border:0;margin:0 0 2rem;padding:0;min-width:0}
+legend{font-family:var(--hand);font-weight:700;font-size:1.9rem;line-height:1;color:var(--orange-deep);padding:0;margin-bottom:1rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}}
+.field{display:grid;gap:.45rem;margin-bottom:1.2rem}
+.field>label,.field>.label{font-weight:700;font-size:.95rem}
+.field small{font-weight:400;color:var(--ink-soft)}
+.field b,.consent b{color:var(--orange-deep)}
+input[type=text],input[type=email],input[type=tel],select,textarea{
+  width:100%;font:inherit;color:var(--espresso);background:#fff;border:2px solid var(--espresso);border-radius:16px;padding:.8rem 1rem;
+  transition:box-shadow .2s,border-color .2s;
+}
+textarea{resize:vertical;min-height:7rem}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none;border-color:var(--orange);box-shadow:0 0 0 4px rgba(216,117,27,.35)}
+input:user-invalid{border-color:#a3341a}
+.pills{display:flex;flex-wrap:wrap;gap:.55rem}
+.pill{position:relative;cursor:pointer}
+.pill input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.pill span{display:inline-block;padding:.55rem 1.05rem;border:2px solid var(--espresso);border-radius:999px;font-weight:600;font-size:.95rem;background:#fff;transition:background .2s,color .2s,transform .2s var(--ease)}
+.pill:hover span{transform:translateY(-2px)}
+.pill input:checked+span{background:var(--espresso);color:var(--cream)}
+.pill input:focus-visible+span{outline:3px solid var(--orange);outline-offset:3px}
+.consent{display:flex;gap:.8rem;align-items:flex-start;font-size:.95rem;line-height:1.45;margin:.4rem 0 1.6rem;cursor:pointer}
+.consent input{width:1.35rem;height:1.35rem;flex:none;margin-top:.1rem;accent-color:var(--espresso)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.btn-lg{padding:1.1rem 2rem;font-size:1.05rem}
+.btn:disabled{opacity:.7;cursor:progress;transform:none}
+.form-msg{color:#a3341a;font-weight:600;font-size:.95rem}
+.form-done,.form-fallback{display:grid;justify-items:center;text-align:center;gap:1rem;padding:1.5rem 0}
+.form-done[hidden],.form-fallback[hidden],#leadForm[hidden]{display:none}
+.form-done>.icon{width:5rem;height:5rem;color:var(--orange)}
+.form-done h2{font-size:clamp(2.4rem,6vw,4rem)}
+.form-done .hand{font-size:2rem;color:var(--orange-deep);line-height:1}
+.field label small,.field .label small{display:block;font-weight:400;font-size:.88em;color:var(--espresso);opacity:.75;margin-top:.15rem}
