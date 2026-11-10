@@ -1,6 +1,6 @@
 # Letícia Araújo · English Classes
 
-Landing page e identidade de marca para uma professora de inglês. O ponto de partida foi um PDF de apresentação (“Teacher pitch”) e o perfil do Instagram dela; o resultado é um site estático, rápido e responsivo, sem framework e sem build.
+Landing page para uma professora de inglês. O ponto de partida foi um PDF de apresentação (“Teacher pitch”) e o perfil do Instagram dela; o resultado é um site estático, rápido e responsivo, sem framework e sem build.
 
 ![Página inicial no desktop](assets/preview-desktop.jpg)
 
@@ -9,7 +9,6 @@ Landing page e identidade de marca para uma professora de inglês. O ponto de pa
 | Arquivo | O que é |
 |---|---|
 | `index.html` | Landing page: hero, trajetória, como funcionam as aulas, planos, regras e contato |
-| `brand.html` | Guia de identidade: símbolo, logo, paleta, tipografia, voz e exemplos de post/story |
 | `styles.css` | Design tokens (variáveis CSS) e todos os componentes |
 | `script.js` | Revelação ao rolar, nav que esconde ao descer e alternador R$ / € nos planos |
 | `fonts/` | Fraunces, Public Sans e Caveat (OFL), hospedadas localmente |
@@ -27,7 +26,7 @@ Landing page e identidade de marca para uma professora de inglês. O ponto de pa
 - **Pagamento explicado em linha do tempo** (aulas começam em 1 fev, primeiro pagamento em 5 mar), em vez de um parágrafo.
 - **Acessibilidade:** texto de leitura sempre em espresso sobre as cores quentes (contraste mínimo 5:1); creme sobre laranja só em títulos grandes; foco visível; `prefers-reduced-motion` respeitado; HTML semântico.
 
-## Identidade
+## Identidade visual
 
 | Cor | Hex | Uso |
 |---|---|---|
@@ -40,7 +39,7 @@ Landing page e identidade de marca para uma professora de inglês. O ponto de pa
 | Mostarda | `#D9A93B` | Destaque |
 | Coral Veneza | `#E58A6B` | Só em redes sociais |
 
-Tipografia: **Fraunces** (títulos), **Public Sans** (texto) e **Caveat** (bilhetes). Detalhes completos em `brand.html`.
+Tipografia: **Fraunces** (títulos), **Public Sans** (texto) e **Caveat** (bilhetes).
 
 ## Rodar localmente
 
