@@ -360,6 +360,9 @@ body::after{
 .foot a{text-underline-offset:3px}
 .foot .logo{color:var(--cream)}
 .foot nav{display:flex;gap:1.2rem;flex-wrap:wrap}
+.foot-links{font-size:.85rem;opacity:.85}
+.foot-links a{text-decoration:none;border-bottom:1px dotted currentColor}
+.foot-links a:hover{color:var(--mustard)}
 
 /* ---------- reveal ---------- */
 .js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
