@@ -304,8 +304,13 @@ body::after{
 .cta{background:var(--orange);color:var(--cream);border-radius:var(--r-lg) var(--r-lg) 0 0;margin-inline:clamp(8px,1.5vw,20px);margin-top:clamp(40px,6vw,80px);position:relative;overflow:hidden}
 .cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,70px);align-items:center;padding-block:clamp(56px,8vw,110px)}
 .cta h2{font-size:clamp(5rem,15vw,12rem);line-height:.8;letter-spacing:-.05em;font-style:italic;font-weight:400}
-.cta p.hand{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.1;margin:1.6rem 0 .6rem}
-.cta .contact{font-weight:700;font-size:1.05rem;margin-bottom:1.8rem;color:var(--espresso)}
+.cta p.hand{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.1;margin:1.6rem 0 1.5rem}
+.contacts{display:grid;gap:.8rem;justify-items:start;margin-bottom:2rem}
+.contact-link{display:inline-flex;align-items:center;gap:.8rem;text-decoration:none;color:var(--espresso);font-weight:700;font-size:clamp(1.05rem,2.4vw,1.25rem);line-height:1.2;overflow-wrap:anywhere}
+.contact-link .ico{display:grid;place-items:center;flex:none;width:2.9rem;height:2.9rem;border-radius:50%;background:var(--espresso);color:var(--cream);transition:transform .25s var(--ease),background .25s}
+.contact-link .ico svg{width:1.45rem;height:1.45rem;fill:currentColor}
+.contact-link:hover .ico{transform:scale(1.1) rotate(-6deg);background:var(--cream);color:var(--espresso)}
+.contact-link:hover span:last-child{text-decoration:underline;text-underline-offset:4px}
 .cta .btn-row{display:flex;flex-wrap:wrap;gap:.8rem}
 .cta-photo{border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3.3;transform:rotate(2.4deg);border:6px solid var(--cream);box-shadow:12px 12px 0 var(--espresso);position:relative}
 .cta-photo img{width:100%;height:100%;object-fit:cover}
