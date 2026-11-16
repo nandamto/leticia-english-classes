@@ -256,11 +256,14 @@ body::after{
 /* ---------- planos ---------- */
 .plans{padding-top:0}
 .plans-head{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:end;margin-bottom:clamp(28px,4vw,48px)}
-.toggle{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;background:var(--sand);border-radius:999px;padding:5px;isolation:isolate}
-.toggle button{position:relative;z-index:1;border:0;background:none;font:700 .95rem var(--sans);padding:.7rem 1.4rem;border-radius:999px;cursor:pointer;color:var(--espresso);transition:color .25s}
-.toggle button[aria-pressed="true"]{color:var(--cream)}
-.toggle .thumb{position:absolute;z-index:0;top:5px;bottom:5px;left:5px;width:calc(50% - 5px);border-radius:999px;background:var(--espresso);transition:transform .35s var(--ease)}
-.toggle[data-cur="EUR"] .thumb{transform:translateX(100%)}
+.from{display:inline-flex;flex-direction:column;align-items:center;gap:.15rem;margin:0;padding:1rem 1.8rem;background:var(--mustard);color:var(--espresso);border:3px solid var(--espresso);border-radius:var(--r-lg);box-shadow:6px 6px 0 var(--espresso);transform:rotate(-2deg);text-align:center}
+.from small{font:700 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.from strong{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,3rem);line-height:1;letter-spacing:-.03em;font-variant-numeric:lining-nums}
+.from strong span{opacity:.5;font-weight:300}
+.plan-cta{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.3rem;border-radius:999px;background:var(--espresso);color:var(--cream);font:700 .95rem var(--sans);text-decoration:none;transition:transform .25s var(--ease)}
+.plan-cta:hover{transform:translateX(4px)}
+.plan-cta:focus-visible{outline:3px solid var(--espresso);outline-offset:3px}
+.plan-cta .icon{width:1em;height:1em;fill:currentColor}
 .plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:stretch}
 .plan{
   position:relative;border-radius:var(--r-lg);padding:clamp(1.6rem,2.6vw,2.4rem);display:flex;flex-direction:column;gap:1.2rem;

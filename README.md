@@ -10,7 +10,7 @@ Landing page para uma professora de inglês. O ponto de partida foi um PDF de ap
 |---|---|
 | `index.html` | Landing page: hero, trajetória, como funcionam as aulas, planos, regras e contato |
 | `styles.css` | Design tokens (variáveis CSS) e todos os componentes |
-| `script.js` | Revelação ao rolar, nav que esconde ao descer e alternador R$ / € nos planos |
+| `script.js` | Revelação ao rolar e nav que esconde ao descer |
 | `fonts/` | Fraunces, Public Sans e Caveat (OFL), hospedadas localmente |
 | `assets/` | Fotos otimizadas e favicon |
 
@@ -22,7 +22,7 @@ Landing page para uma professora de inglês. O ponto de partida foi um PDF de ap
 
 - **Hero** em laranja, com foto em arco, selo giratório e adesivo: acolhedor, não institucional.
 - **Faixa em movimento** com o lema “not just an English teacher”.
-- **Planos com alternador R$ / €**: o pitch lista os dois valores; a página mostra um por vez e lembra a escolha.
+- **Planos sem valores individuais**: a página mostra só “a partir de R$ 200 / 32€” e cada plano leva ao formulário para pedir valores.
 - **Pagamento explicado em linha do tempo** (aulas começam em 1 fev, primeiro pagamento em 5 mar), em vez de um parágrafo.
 - **Acessibilidade:** texto de leitura sempre em espresso sobre as cores quentes (contraste mínimo 5:1); creme sobre laranja só em títulos grandes; foco visível; `prefers-reduced-motion` respeitado; HTML semântico.
 
@@ -58,7 +58,7 @@ python3 -m http.server 8000
 
 ## Para editar o conteúdo
 
-- Preços: atributos `data-brl` e `data-eur` em cada `.price` no `index.html`.
+- Valor de referência: selo `.from` na seção `#plans` do `index.html`.
 - Contato: o número do WhatsApp (`5519988221680`) e os links de Instagram e LinkedIn estão na seção `#contact`.
 - Cores: variáveis no topo do `styles.css`.
 
