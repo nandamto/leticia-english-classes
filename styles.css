@@ -518,3 +518,4 @@ input:user-invalid{border-color:#a3341a}
 .form-done h2{font-size:clamp(2.4rem,6vw,4rem)}
 .form-done .hand{font-size:2rem;color:var(--orange-deep);line-height:1}
 .field label small,.field .label small{display:block;font-weight:400;font-size:.88em;color:var(--espresso);opacity:.75;margin-top:.15rem}
+.free .free-note{margin-top:.9rem;font-weight:700;color:var(--mustard)}
